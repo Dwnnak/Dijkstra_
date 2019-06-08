@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PriorityTests/PriorityQueueTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraAlgorhitm.cs">
     <Files>
-      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="8" Column="6" />
+      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="32" Column="1" />
       <File FileName="DijkstraAlgorhitm/PQElement.cs" Line="12" Column="20" />
       <File FileName="DijkstraAlgorhitm/Graph.cs" Line="19" Column="1" />
       <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="4" Column="17" />
       <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="8" Column="81" />
       <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="9" Column="9" />
       <File FileName="DijkstraAlgorhitm/Program.cs" Line="25" Column="1" />
-      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="39" Column="41" />
+      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="56" Column="35" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,12 +17,12 @@
           <Node name="DijkstraAlgorithm" expanded="True">
             <Node name="DijkstraAlgorhitm" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="DijkstraAlgorhitm.cs" selected="True" />
             </Node>
             <Node name="PriorityTests" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="SdkDependencies" expanded="True" />
               </Node>
-              <Node name="PriorityQueueTests.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,13 +30,7 @@
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
           <Node name="DijkstraAlgorithm" expanded="True">
-            <Node name="PriorityTests" expanded="True">
-              <Node name="PriorityTests" expanded="True">
-                <Node name="PriorityQueueTests" expanded="True">
-                  <Node name="TreeIsCorrect" selected="True" />
-                </Node>
-              </Node>
-            </Node>
+            <Node name="PriorityTests" selected="True" />
           </Node>
         </State>
       </Pad>

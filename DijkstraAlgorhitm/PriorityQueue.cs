@@ -27,12 +27,13 @@ namespace DijkstraAlgorhitm
         {
             tree = new List<PQElement<T>>();
             for (int i = 0; i < values.Length; i++)
-                Insert(values[i]);
+                Insert(values[i].Element, values[i].Priority);
         }
 
-        public void Insert(PQElement<T> element)
+        public void Insert(T element, int priority)
         {
-            tree.Add(element);
+            PQElement<T> temp = new PQElement<T>(element, priority);
+            tree.Add(temp);
             SiftUp(tree.Count - 1);
         }
 

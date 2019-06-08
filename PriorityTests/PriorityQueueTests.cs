@@ -56,13 +56,13 @@ namespace PriorityTests
             Assert.AreEqual(b, a);
         }
 
-        [TestMethod]
-        public void InsertIsCorrect()
-        {
-            PriorityQueue<string> queue = new PriorityQueue<string>(elements);
-            var a = queue.GetMin();
-            var b = 1;
-            Assert.AreEqual(b, a);
-        }
+        //[TestMethod]
+        //public void InsertIsCorrect()
+        //{
+        //    PriorityQueue<string> queue = new PriorityQueue<string>(elements);
+        //    var a = queue.GetMin();
+        //    var b = 1;
+        //    Assert.AreEqual(b, a);
+        //}
     }
 }
