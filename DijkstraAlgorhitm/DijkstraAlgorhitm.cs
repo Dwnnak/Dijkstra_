@@ -1,5 +1,4 @@
-﻿using System;
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// Implements Dijkstra shortest paths algorithm
@@ -10,7 +9,8 @@ namespace DijkstraAlgorhitm
         /// Call Dijkstra algorithm
         /// </summary>
         /// <param source graph ="graph"></param>
-        /// <param source node (start node) ="source"></param>
+        /// <param the node 
+        /// from which we look for the shortest paths ="source"></param>
         /// <returns></returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
@@ -20,27 +20,23 @@ namespace DijkstraAlgorhitm
             while (priorityQueue != null)
             {
                 var start = priorityQueue.ExtractMin();
-
                 var adjNodes = graph.AdjDict[start];
 
                 foreach(var (node, weight) in adjNodes)
                 {
                     //if (priorityQueue.Contains(adjNode))
-                    //{
-                        Relax(start, node, weight, priorityQueue);
-                    //}
+                    Relax(start, node, weight, priorityQueue);
                 }
             }
             return graph;
-
         }
 
         /// <summary>
         /// Dijkstra initialization 
         /// </summary>
-        /// <param name="graph"></param>
-        /// <param name="source"></param>
-        /// <param name="distances"></param>
+        /// <param source graph="graph"></param>
+        /// <param source node="source"></param>
+        /// <param null priority queue="distances"></param>
         private void Initialize
             (Graph graph, DijkstraNode source, PriorityQueue<DijkstraNode> distances)
         {
@@ -53,11 +49,14 @@ namespace DijkstraAlgorhitm
         }
 
         /// <summary>
-        /// Find shortest distance
+        /// find shortest distance to vertice v 
+        /// between known distance (v.Distance) 
+        /// and from u across edge (u, v)
         /// </summary>
-        /// <param name="u"></param>
-        /// <param name="v"></param>
-        /// <param name="weight"></param>
+        /// <param source node="u"></param>
+        /// <param adjacent node="v"></param>
+        /// <param weith of edge between u and v="weight"></param>
+        /// <param pririty queue with Dijkstra nodes="queue"></param>
         private void Relax(DijkstraNode u, DijkstraNode v, int weight, 
             PriorityQueue<DijkstraNode> queue)
         {
@@ -67,10 +66,7 @@ namespace DijkstraAlgorhitm
                 v.Distance = distanceThroughU;
                 v.Prev = u;
                 //queue.ChangePriority(v, distanceThroughU);
-            }
-                
+            }       
         }
-
-
     }
 }
