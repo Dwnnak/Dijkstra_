@@ -1,8 +1,17 @@
 ﻿using System;
 namespace DijkstraAlgorhitm
 {
+    /// <summary>
+    /// Implements Dijkstra shortest paths algorithm
+    /// </summary>
     public class DijkstraAlgorhitm
     {
+        /// <summary>
+        /// Call Dijkstra algorithm
+        /// </summary>
+        /// <param source graph ="graph"></param>
+        /// <param source node (start node) ="source"></param>
+        /// <returns></returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
             PriorityQueue<DijkstraNode> priorityQueue = null;
@@ -26,6 +35,12 @@ namespace DijkstraAlgorhitm
 
         }
 
+        /// <summary>
+        /// Dijkstra initialization 
+        /// </summary>
+        /// <param name="graph"></param>
+        /// <param name="source"></param>
+        /// <param name="distances"></param>
         private void Initialize
             (Graph graph, DijkstraNode source, PriorityQueue<DijkstraNode> distances)
         {

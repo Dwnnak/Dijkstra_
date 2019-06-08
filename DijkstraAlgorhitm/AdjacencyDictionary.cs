@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 namespace DijkstraAlgorhitm
 {
+    /// <summary>
+    /// mathes node to adjacent nodes with edges weights to them.
+    /// For example from node U to V1, V2, ... Vn 
+    /// with edges weights (from U to V1, V2, ... Vn)
+    /// </summary>
     public class AdjacencyDictionary
     {
-        /// <summary>
-        /// mathes node to adjacent nodes with edges weights to them.
-        /// For example from node U to V1, V2, ... Vn 
-        /// with edges weights (from U to V1, V2, ... Vn)
-        /// </summary>
         private Dictionary<DijkstraNode, List<(DijkstraNode node, int weight)>> AdjDictionary
         { get; set; }
 

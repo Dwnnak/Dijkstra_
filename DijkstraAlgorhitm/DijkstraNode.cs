@@ -1,11 +1,27 @@
 ﻿using System;
 namespace DijkstraAlgorhitm
 {
+    /// <summary>
+    /// implements vertice of graph 
+    /// also stores elements of Dijkstra algorithm (distance and prev)
+    /// </summary>
     public class DijkstraNode
     {
-        public string Name { get; set; }        
-        public int Distance { get; set; }       //from source node
-        public DijkstraNode Prev { get; set; }  //previous node of shortest path
+        /// <summary>
+        /// name of node
+        /// </summary>
+        public string Name { get; set; }
+        
+        /// <summary>
+        /// distance from source node. 
+        /// int.MaxValue by default
+        /// </summary>
+        public int Distance { get; set; }
+
+        /// <summary>
+        /// previous node of shortest path
+        /// </summary>
+        public DijkstraNode Prev { get; set; }  
 
         public DijkstraNode(string name, int distance = int.MaxValue)
         {
