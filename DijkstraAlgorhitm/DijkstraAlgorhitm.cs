@@ -8,9 +8,10 @@ namespace DijkstraAlgorhitm
             PriorityQueue<DijkstraNode> priorityQueue = null;
             Initialize(graph, source, priorityQueue);
 
-            while(priorityQueue != null)
+            while (priorityQueue != null)
             {
-                //var closest
+                var closestNode = priorityQueue.ExtractMin();
+
             }
         }
 
@@ -21,8 +22,8 @@ namespace DijkstraAlgorhitm
             var vertices = graph.AdjDict.GetVertices();
             distances = new PriorityQueue<DijkstraNode>();
 
-            //foreach (var v in vertices)
-            //    distances.Insert(v, v.Distance);
+            foreach (var v in vertices)
+                distances.Insert(v, v.Distance);
         }
 
         private void Relax(DijkstraNode u, DijkstraNode v, int weight)
