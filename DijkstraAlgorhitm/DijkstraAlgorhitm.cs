@@ -10,9 +10,20 @@ namespace DijkstraAlgorhitm
 
             while (priorityQueue != null)
             {
-                var closestNode = priorityQueue.ExtractMin();
+                var start = priorityQueue.ExtractMin();
 
+                var adjNodes = graph.AdjDict[start];
+
+                foreach(var (node, weight) in adjNodes)
+                {
+                    //if (priorityQueue.Contains(adjNode))
+                    //{
+                        Relax(start, node, weight, priorityQueue);
+                    //}
+                }
             }
+            return graph;
+
         }
 
         private void Initialize
@@ -26,9 +37,23 @@ namespace DijkstraAlgorhitm
                 distances.Insert(v, v.Distance);
         }
 
-        private void Relax(DijkstraNode u, DijkstraNode v, int weight)
+        /// <summary>
+        /// Find shortest distance
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="v"></param>
+        /// <param name="weight"></param>
+        private void Relax(DijkstraNode u, DijkstraNode v, int weight, 
+            PriorityQueue<DijkstraNode> queue)
         {
-
+            var distanceThroughU = u.Distance + weight;
+            if (distanceThroughU < v.Distance)
+            {
+                v.Distance = distanceThroughU;
+                v.Prev = u;
+                //queue.ChangePriority(v, distanceThroughU);
+            }
+                
         }
 
 
