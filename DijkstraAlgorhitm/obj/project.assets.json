@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ivandoronin/Projects/DijkstraAlgorithm/DijkstraAlgorhitm/DijkstraAlgorhitm.csproj",
+      "projectUniqueName": "/Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/DijkstraAlgorhitm.csproj",
       "projectName": "DijkstraAlgorhitm",
-      "projectPath": "/Users/ivandoronin/Projects/DijkstraAlgorithm/DijkstraAlgorhitm/DijkstraAlgorhitm.csproj",
+      "projectPath": "/Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/DijkstraAlgorhitm.csproj",
       "packagesPath": "/Users/ivandoronin/.nuget/packages/",
-      "outputPath": "/Users/ivandoronin/Projects/DijkstraAlgorithm/DijkstraAlgorhitm/obj/",
+      "outputPath": "/Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

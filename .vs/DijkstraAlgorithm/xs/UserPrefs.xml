@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DictionaryExtensions.cs">
+    <Files>
+      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/PQElement.cs" Line="8" Column="10" />
+      <File FileName="DijkstraAlgorhitm/Graph.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="4" Column="17" />
+      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="2" Column="28" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/Menu.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DictionaryExtensions.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DijkstraAlgorithm" expanded="True">
+            <Node name="DijkstraAlgorhitm" expanded="True">
+              <Node name="PQElement.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DijkstraAlgorhitm PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
