@@ -25,13 +25,21 @@ namespace DijkstraAlgorhitm
             var b = queue.GetMin();
             var c = queue.ExtractMin();
             queue.Remove(queue.Size - 1);
-            queue.Insert(new PQElement<string>("b", 22));
-            queue.Insert(new PQElement<string>("b", 3));
-            queue.Insert(new PQElement<string>("b", -2));
+            //queue.Insert(new PQElement<string>("b", 22));
+            //queue.Insert(new PQElement<string>("b", 3));
+            //queue.Insert(new PQElement<string>("b", -2));
 
             queue.Remove(queue.Size - 1);
             queue.ChangePriority(0, 10);
-
+            var g = new Graph();
+            var aaa = g.AddNode("a");
+            var bbb = g.AddNode("b");
+            var ccc = g.AddNode("c");
+            g.AddEdge(aaa, bbb, 1);
+            g.AddEdge(bbb, aaa, 2);
+            g.AddEdge(bbb, ccc, 4);
+            g.FindDijkstraShortestPathsFrom(aaa);
+            Console.WriteLine($"{aaa.Distance} {bbb.Distance} {ccc.Distance}");
         }
     }
 }

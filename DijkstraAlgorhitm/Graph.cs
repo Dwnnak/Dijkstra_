@@ -12,12 +12,17 @@ namespace DijkstraAlgorhitm
         /// </summary>
         public AdjacencyDictionary AdjDict { get; set; }
 
+        public Graph()
+        {
+            AdjDict = new AdjacencyDictionary();
+        }
+
         /// <summary>
         /// add vertice to graph
         /// </summary>
         /// <param name of future node="name"></param>
         /// <returns></returns>
-        public DijkstraNode AddNode (string name)
+        public DijkstraNode AddNode(string name)
         {
             return AdjDict.AddNode(name);
         }

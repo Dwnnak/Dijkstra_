@@ -22,10 +22,10 @@
                 var start = priorityQueue.ExtractMin();
                 var adjNodes = graph.AdjDict[start];
 
-                foreach(var (node, weight) in adjNodes)
+                foreach (var (node, weight) in adjNodes)
                 {
-                    //if (priorityQueue.Contains(adjNode))
-                    Relax(start, node, weight, priorityQueue);
+                    if (priorityQueue.Contains(node))
+                        Relax(start, node, weight, priorityQueue);
                 }
             }
             return graph;
@@ -57,7 +57,7 @@
         /// <param adjacent node="v"></param>
         /// <param weith of edge between u and v="weight"></param>
         /// <param pririty queue with Dijkstra nodes="queue"></param>
-        private void Relax(DijkstraNode u, DijkstraNode v, int weight, 
+        private void Relax(DijkstraNode u, DijkstraNode v, int weight,
             PriorityQueue<DijkstraNode> queue)
         {
             var distanceThroughU = u.Distance + weight;
@@ -65,8 +65,8 @@
             {
                 v.Distance = distanceThroughU;
                 v.Prev = u;
-                //queue.ChangePriority(v, distanceThroughU);
-            }       
+                queue.ChangePriority(v, distanceThroughU);
+            }
         }
     }
 }

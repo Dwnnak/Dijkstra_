@@ -18,10 +18,16 @@ namespace DijkstraAlgorhitm
         private Dictionary<DijkstraNode, List<(DijkstraNode node, int weight)>> AdjDictionary
         { get; set; }
 
+        public AdjacencyDictionary()
+        {
+            AdjDictionary = new 
+                Dictionary<DijkstraNode, List<(DijkstraNode node, int weight)>>();
+        }
+
         public DijkstraNode AddNode(string name)
         {
             var newNode = new DijkstraNode(name);
-            AdjDictionary.Add(newNode, null);
+            AdjDictionary.Add(newNode, new List<(DijkstraNode node, int weight)>());
             return newNode;
         }
 
