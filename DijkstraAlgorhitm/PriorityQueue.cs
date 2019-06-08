@@ -42,13 +42,13 @@ namespace DijkstraAlgorhitm
             return tree[0].Priority;
         }
 
-        public PQElement<T> ExtractMin()
+        public T ExtractMin()
         {
             PQElement<T> result = tree[0];
             tree[0] = tree[tree.Count - 1];
             tree.RemoveAt(tree.Count - 1);
             SiftDown(0);
-            return result;
+            return result.Element;
         }
 
         public void Remove(int i)
