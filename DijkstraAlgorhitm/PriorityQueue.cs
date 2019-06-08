@@ -67,8 +67,34 @@ namespace DijkstraAlgorhitm
                 SiftUp(i);
             else if (p.CompareTo(oldP) > 0)
                 SiftDown(i);
-
         }
+
+        public void ChangePriority(DijkstraNode element, int p)
+        {
+            int i = FindPosition(element);
+            int oldP = tree[i].Priority;
+            tree[i].Priority = p;
+
+            if (p.CompareTo(oldP) < 0)
+                SiftUp(i);
+            else if (p.CompareTo(oldP) > 0)
+                SiftDown(i);
+        }
+
+        public bool Contains(DijkstraNode element)
+        {
+            for(int i = 0; i < tree.Count; i++)
+            {
+                if (tree[i].Element is DijkstraNode)
+                {
+                    DijkstraNode node = tree[i].Element as DijkstraNode;
+                    if (node == element)
+                        return true;
+                }
+            }
+            return false;
+        }
+
 
         private void SiftUp(int i)
         {
@@ -104,6 +130,21 @@ namespace DijkstraAlgorhitm
             PQElement<T> tempValue = tree[i];
             tree[i] = tree[j];
             tree[j] = tempValue;
+        }
+
+        private int FindPosition(DijkstraNode element)
+        {
+            for (int i = 0; i < tree.Count; i++)
+            {
+                if (tree[i].Element is DijkstraNode)
+                {
+                    DijkstraNode node = tree[i].Element as DijkstraNode;
+                    if (node == element)
+                        return i;
+                }
+            }
+
+            throw new ArgumentOutOfRangeException();
         }
     }
 }

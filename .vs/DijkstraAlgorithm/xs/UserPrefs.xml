@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraAlgorhitm.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/PQElement.cs">
     <Files>
-      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="32" Column="1" />
+      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="85" Column="1" />
       <File FileName="DijkstraAlgorhitm/PQElement.cs" Line="12" Column="20" />
       <File FileName="DijkstraAlgorhitm/Graph.cs" Line="19" Column="1" />
-      <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="4" Column="17" />
-      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="8" Column="81" />
-      <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="9" Column="9" />
+      <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="13" Column="33" />
+      <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="1" Column="1" />
       <File FileName="DijkstraAlgorhitm/Program.cs" Line="25" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="15" Column="45" />
       <File FileName="PriorityTests/PriorityQueueTests.cs" Line="56" Column="35" />
-      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,7 @@
           <Node name="DijkstraAlgorithm" expanded="True">
             <Node name="DijkstraAlgorhitm" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="DijkstraAlgorhitm.cs" selected="True" />
+              <Node name="PQElement.cs" selected="True" />
             </Node>
             <Node name="PriorityTests" expanded="True">
               <Node name="Dependencies" expanded="True">
@@ -29,9 +29,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="DijkstraAlgorithm" expanded="True">
-            <Node name="PriorityTests" selected="True" />
-          </Node>
+          <Node name="DijkstraAlgorithm" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
