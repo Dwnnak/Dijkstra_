@@ -1,10 +1,15 @@
 ﻿using System;
 namespace DijkstraAlgorhitm
 {
-    public class PQElement
+    public class PQElement<T>
     {
-        public PQElement()
+        public int Priority { get; set; }
+        public T Element { get; set; }
+
+        public PQElement(T value, int priority)
         {
+            Priority = priority;
+            Element = value;
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace DijkstraAlgorhitm
 {
-    public class AdjacencyDictionary
+    public class AdjacencyDictionary<TNode>
     {
-        public AdjacencyDictionary()
-        {
-        }
+        
     }
 }

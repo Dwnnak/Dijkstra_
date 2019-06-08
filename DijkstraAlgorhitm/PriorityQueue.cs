@@ -6,10 +6,10 @@ namespace DijkstraAlgorhitm
     public class PriorityQueue<T>
          where T : IComparable
     {
-        private List<T> tree;
+        public List<PQElement<T>> tree;
         public int Size { get { return tree.Count; } }
 
-        private int Parent(int i) 
+        private int Parent(int i)
         {
             if (i == 0) return 0;
             if (i % 2 == 0)
@@ -21,30 +21,30 @@ namespace DijkstraAlgorhitm
 
         public PriorityQueue()
         {
-            tree = new List<T>();
+            tree = new List<PQElement<T>>();
         }
 
-        public PriorityQueue(params T[] values)
+        public PriorityQueue(params PQElement<T>[] values)
         {
-            tree = new List<T>();
+            tree = new List<PQElement<T>>();
             for (int i = 0; i < values.Length; i++)
                 Insert(values[i]);
         }
 
-        public void Insert(T element)
+        public void Insert(PQElement<T> element)
         {
             tree.Add(element);
             SiftUp(tree.Count - 1);
         }
 
-        public T GetMin()
+        public int GetMin()
         {
-            return tree[0];
+            return tree[0].Priority;
         }
 
-        public T ExtractMin()
+        public PQElement<T> ExtractMin()
         {
-            T result = tree[0];
+            PQElement<T> result = tree[0];
             tree[0] = tree[tree.Count - 1];
             tree.RemoveAt(tree.Count - 1);
             SiftDown(0);
@@ -58,10 +58,10 @@ namespace DijkstraAlgorhitm
             ExtractMin();
         }
 
-        public void ChangePriority(int i, T p)
+        public void ChangePriority(int i, int p)
         {
-            T oldP = tree[i];
-            tree[i] = p;
+            int oldP = tree[i].Priority;
+            tree[i].Priority = p;
 
             if (p.CompareTo(oldP) < 0)
                 SiftUp(i);
@@ -72,7 +72,7 @@ namespace DijkstraAlgorhitm
 
         private void SiftUp(int i)
         {
-            if (i > 0 && tree[Parent(i)].CompareTo(tree[i]) > 0)
+            if (i > 0 && tree[Parent(i)].Priority.CompareTo(tree[i].Priority) > 0)
             {
                 Swap(i, Parent(i));
                 SiftUp(Parent(i));
@@ -85,11 +85,11 @@ namespace DijkstraAlgorhitm
             var size = tree.Count;
 
             var l = LeftChild(i);
-            if (l < size && tree[l].CompareTo(tree[minIndex]) < 0)
+            if (l < size && tree[l].Priority.CompareTo(tree[minIndex].Priority) < 0)
                 minIndex = l;
 
             var r = RightChild(i);
-            if (r < size && tree[r].CompareTo(tree[minIndex]) < 0)
+            if (r < size && tree[r].Priority.CompareTo(tree[minIndex].Priority) < 0)
                 minIndex = r;
 
             if (i != minIndex)
@@ -101,7 +101,7 @@ namespace DijkstraAlgorhitm
 
         private void Swap(int i, int j)
         {
-            T tempValue = tree[i];
+            PQElement<T> tempValue = tree[i];
             tree[i] = tree[j];
             tree[j] = tempValue;
         }

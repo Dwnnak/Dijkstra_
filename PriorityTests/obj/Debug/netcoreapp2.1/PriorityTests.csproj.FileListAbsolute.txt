@@ -1,0 +1,17 @@
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/PriorityTests.deps.json
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/PriorityTests.runtimeconfig.json
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/PriorityTests.runtimeconfig.dev.json
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/PriorityTests.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/PriorityTests.pdb
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.pdb
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.csprojAssemblyReference.cache
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.csproj.CoreCompileInputs.cache
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.AssemblyInfoInputs.cache
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.AssemblyInfo.cs
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.csproj.CopyComplete
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.dll
+/Users/ivandoronin/Documents/GitHub/Dijkstra_/PriorityTests/obj/Debug/netcoreapp2.1/PriorityTests.pdb

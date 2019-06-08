@@ -6,14 +6,28 @@ namespace DijkstraAlgorhitm
     {
         static void Main(string[] args)
         {
-            PriorityQueue<int> queue = new PriorityQueue<int>(5,1,4,3,8,2,9,8,1,2);
-            int a = queue.ExtractMin();
-            int b = queue.GetMin();
-            int c = queue.ExtractMin();
+            PQElement<string>[] elements = {
+                new PQElement<string>("a", 10),
+                new PQElement<string>("a", 9),
+                new PQElement<string>("a", 8),
+                new PQElement<string>("a", 7),
+                new PQElement<string>("a", 6),
+                new PQElement<string>("a", 5),
+                new PQElement<string>("a", 4),
+                new PQElement<string>("a", 3),
+                new PQElement<string>("a", 2),
+                new PQElement<string>("a", 1)
+            };
+
+            PriorityQueue<string> queue = new PriorityQueue<string>(elements);
+
+            var a = queue.ExtractMin();
+            var b = queue.GetMin();
+            var c = queue.ExtractMin();
             queue.Remove(queue.Size - 1);
-            queue.Insert(22);
-            queue.Insert(3);
-            queue.Insert(-2);
+            queue.Insert(new PQElement<string>("b", 22));
+            queue.Insert(new PQElement<string>("b", 3));
+            queue.Insert(new PQElement<string>("b", -2));
 
             queue.Remove(queue.Size - 1);
             queue.ChangePriority(0, 10);
