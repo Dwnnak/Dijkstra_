@@ -7,7 +7,7 @@ namespace DijkstraAlgorhitm
         public int Distance { get; set; }       //from source node
         public DijkstraNode Prev { get; set; }  //previous node of shortest path
 
-        public DijkstraNode(string name, int distance)
+        public DijkstraNode(string name, int distance = int.MaxValue)
         {
             Name = name;
             Distance = distance;

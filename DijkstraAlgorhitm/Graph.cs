@@ -1,18 +1,18 @@
 ﻿using System;
 namespace DijkstraAlgorhitm
 {
-    public class Graph<TNode>
+    public class Graph
     {
-        public AdjacencyDictionary<TNode> AdjDict { get; set; }
+        public AdjacencyDictionary AdjDict { get; set; }
 
         public DijkstraNode AddNode (string name)
         {
-            throw new NotImplementedException();
+            return AdjDict.AddNode(name);
         }
 
         public void AddEdge(DijkstraNode u, DijkstraNode v, int weight)
         {
-            throw new NotImplementedException();
+            AdjDict.AddEdge(u, v, weight);
         }
     }
 }

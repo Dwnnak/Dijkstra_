@@ -4,7 +4,6 @@ using System.Collections.Generic;
 namespace DijkstraAlgorhitm
 {
     public class PriorityQueue<T>
-         where T : IComparable
     {
         public List<PQElement<T>> tree;
         public int Size { get { return tree.Count; } }
@@ -106,6 +105,5 @@ namespace DijkstraAlgorhitm
             tree[j] = tempValue;
         }
     }
-
 }
 

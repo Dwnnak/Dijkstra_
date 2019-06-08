@@ -6,9 +6,8 @@ namespace PriorityTests
 {
     [TestClass]
     public class PriorityQueueTests
-    { 
-
-      PQElement<string>[] elements = {
+    {
+        PQElement<string>[] elements = {
                 new PQElement<string>("a", 10),
                 new PQElement<string>("b", 9),
                 new PQElement<string>("c", 8),
@@ -27,7 +26,7 @@ namespace PriorityTests
         {
             PriorityQueue<string> queue = new PriorityQueue<string>(elements);
             bool flag = true;
-            for (int i = 0; i< queue.Size; i++)
+            for (int i = 0; i < queue.Size; i++)
             {
                 if ((i + 1) * 2 < queue.Size && i * 2 + 1 < queue.Size)
                 {
