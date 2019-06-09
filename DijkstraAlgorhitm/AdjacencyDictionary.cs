@@ -24,6 +24,11 @@ namespace DijkstraAlgorhitm
                 Dictionary<DijkstraNode, List<(DijkstraNode node, int weight)>>();
         }
 
+        /// <summary>
+        /// addition new node to graph
+        /// </summary>
+        /// <param name of future node ="name"></param>
+        /// <returns> new node with name of parameter </returns>
         public DijkstraNode AddNode(string name)
         {
             var newNode = new DijkstraNode(name);
@@ -31,25 +36,32 @@ namespace DijkstraAlgorhitm
             return newNode;
         }
 
+        /// <summary>
+        /// addition edge to source node as pair 
+        /// destination node and weitght to it
+        /// </summary>
+        /// <param source node="source"></param>
+        /// <param destination node="destination"></param>
+        /// <param weight from source to destination="weight"></param>
         public void AddEdge(DijkstraNode source, DijkstraNode destination, int weight)
         {
             AdjDictionary[source].Add((destination, weight));
         }
 
         /// <summary>
-        /// Get all the keys that are the vertices of the graph
+        /// Get vertices of graph
         /// </summary>
-        /// <returns></returns>
+        /// <returns> all the keys that are the vertices of the graph </returns>
         public Dictionary<DijkstraNode, List<(DijkstraNode, int)>>.KeyCollection GetVertices()
         {
             return AdjDictionary.Keys;
         }
 
         /// <summary>
-        /// Get List of adjacent nodes with edges weights to them
+        /// access to AdjacencyDictionary by index
         /// </summary>
         /// <param the node the list of which we want to get ="node"></param>
-        /// <returns></returns>
+        /// <returns> List of adjacent nodes with edges weights to them </returns>
         public List<(DijkstraNode node, int weight)> this[DijkstraNode node]
         {
             get

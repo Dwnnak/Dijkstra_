@@ -1,4 +1,6 @@
-﻿namespace DijkstraAlgorhitm
+﻿using System.Linq;
+
+namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// Implements Dijkstra shortest paths algorithm
@@ -11,7 +13,7 @@
         /// <param source graph ="graph"></param>
         /// <param the node 
         /// from which we look for the shortest paths ="source"></param>
-        /// <returns></returns>
+        /// <returns> graph with filled "distances" and "prevs" of every node </returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
             PriorityQueue<DijkstraNode> priorityQueue = new PriorityQueue<DijkstraNode>();
@@ -36,7 +38,7 @@
         /// </summary>
         /// <param source graph="graph"></param>
         /// <param source node="source"></param>
-        /// <param null priority queue="distances"></param>
+        /// <param empty priority queue="distances"></param>
         private void Initialize
             (Graph graph, DijkstraNode source, PriorityQueue<DijkstraNode> distances)
         {

@@ -32,7 +32,7 @@ namespace DijkstraAlgorhitm
         /// </summary>
         /// <param source node="u"></param>
         /// <param destination node="v"></param>
-        /// <param weight of new edge="weight"></param>
+        /// <param weight from source to destination="weight"></param>
         public void AddEdge(DijkstraNode u, DijkstraNode v, int weight)
         {
             AdjDict.AddEdge(u, v, weight);
