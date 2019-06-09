@@ -1,5 +1,6 @@
 using DijkstraAlgorhitm;
 using NUnit.Framework;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Tests
@@ -32,8 +33,8 @@ namespace Tests
             g.AddEdge(b, c, 4);
 
             g.FindDijkstraShortestPathsFrom(a);
-            var paths = DijkstraResultFormating(g, a);
-            Assert.AreEqual("source is a. to a= 0, to b= 1, to c= 5", paths);
+            Assert.AreEqual("source is a. to a= 0, to b= 1, to c= 5",
+                DistancesFormating(g, a));
         }
 
         /*   
@@ -59,14 +60,14 @@ namespace Tests
             g.AddEdge(c, d, 3);
 
             g.FindDijkstraShortestPathsFrom(a);
-            var paths = DijkstraResultFormating(g, a);
-            Assert.AreEqual("source is a. to a= 0, to b= 1, to c= 2, to d= 4", paths);
+            Assert.AreEqual("source is a. to a= 0, to b= 1, to c= 2, to d= 4",
+                DistancesFormating(g, a));
         }
 
         /*      10         2         7
                -----> B -------> D >>>>>>+
-           A  /       | ^       ^  ^     |
-             \       1|  \   8 /    \9   | 
+              /       | ^       ^  ^     |
+             À       1|  \   8 /    \9   | 
               \       |  4\   /      \   |
             3  \      |    \ /        \  |  
                 ------+-->  C ---------> E
@@ -92,19 +93,32 @@ namespace Tests
             g.AddEdge(e, d, 9);
 
             g.FindDijkstraShortestPathsFrom(a);
-            string paths = DijkstraResultFormating(g, a);
             Assert.AreEqual
-                ("source is a. to a= 0, to b= 7, to c= 3, to d= 9, to e= 5", 
-                paths);
+                ("source is a. to a= 0, to b= 7, to c= 3, to d= 9, to e= 5",
+                DistancesFormating(g, a));
+            Assert.AreEqual("a -> c -> b", PathFormating(g, a, b));
         }
-        
-        private static string DijkstraResultFormating(Graph g, DijkstraNode source)
+
+        private string PathFormating(Graph graph, DijkstraNode source, DijkstraNode destination)
         {
-            var nodes = g.AdjDict.GetVertices();
+            var pathNodes = new Stack<string>();
+            var currentNode = destination;
+
+            while(currentNode != null)      // it would be null if currentNode is source
+            {
+                pathNodes.Push(currentNode.Name);
+                currentNode = currentNode.Prev;
+            }
+
+            return string.Join(" -> ", pathNodes);
+        }
+
+        private static string DistancesFormating(Graph graph, DijkstraNode source)
+        {
+            var nodes = graph.AdjDict.GetVertices();
             var distances = nodes.Select(node => $"to {node.Name}= {node.Distance}");
-            string result = string.Join(", ", distances);
-            var paths = $"source is {source.Name}. {result}";
-            return paths;
+            string formattedDistances = string.Join(", ", distances);
+            return $"source is {source.Name}. {formattedDistances}";
         }
     }
 }
