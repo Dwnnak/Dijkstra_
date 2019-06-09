@@ -30,9 +30,9 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// add edge to graph
         /// </summary>
-        /// <param name="u"></param>
-        /// <param name="v"></param>
-        /// <param name="weight"></param>
+        /// <param source node="u"></param>
+        /// <param destination node="v"></param>
+        /// <param weight of new edge="weight"></param>
         public void AddEdge(DijkstraNode u, DijkstraNode v, int weight)
         {
             AdjDict.AddEdge(u, v, weight);
