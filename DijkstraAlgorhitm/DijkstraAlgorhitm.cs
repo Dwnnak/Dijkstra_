@@ -14,14 +14,14 @@
         /// <returns></returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
-            PriorityQueue<DijkstraNode> priorityQueue = null;
+            PriorityQueue<DijkstraNode> priorityQueue = new PriorityQueue<DijkstraNode>();
             Initialize(graph, source, priorityQueue);
 
-            while (priorityQueue != null)
+            while (priorityQueue.Size != 0)
             {
                 var start = priorityQueue.ExtractMin();
                 var adjNodes = graph.AdjDict[start];
-
+                
                 foreach (var (node, weight) in adjNodes)
                 {
                     if (priorityQueue.Contains(node))
@@ -42,8 +42,6 @@
         {
             source.Distance = 0;
             var vertices = graph.AdjDict.GetVertices();
-            distances = new PriorityQueue<DijkstraNode>();
-
             foreach (var v in vertices)
                 distances.Insert(v, v.Distance);
         }
