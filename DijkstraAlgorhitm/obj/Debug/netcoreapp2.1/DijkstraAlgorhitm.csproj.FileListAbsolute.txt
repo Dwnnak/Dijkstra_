@@ -20,15 +20,15 @@
 /Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.AssemblyInfo.cs
 /Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.dll
 /Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.pdb
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.csproj.CoreCompileInputs.cache
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.AssemblyInfoInputs.cache
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.AssemblyInfo.cs
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.dll
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.pdb
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.deps.json
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.runtimeconfig.json
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.runtimeconfig.dev.json
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.dll
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.pdb
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/bin/Debug/netcoreapp2.1/DijkstraAlgorhitm.xml
-D:/Учёба/Алгоритмы и анализ сложности/PriorityQueueAndDijkstra/Dijkstra_/DijkstraAlgorhitm/obj/Debug/netcoreapp2.1/DijkstraAlgorhitm.csprojAssemblyReference.cache
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.deps.json
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.runtimeconfig.json
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.runtimeconfig.dev.json
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.dll
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.pdb
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.xml
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.csprojAssemblyReference.cache
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.csproj.CoreCompileInputs.cache
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.AssemblyInfoInputs.cache
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.AssemblyInfo.cs
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.dll
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\obj\Debug\netcoreapp2.1\DijkstraAlgorhitm.pdb

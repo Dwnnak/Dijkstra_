@@ -60,7 +60,7 @@
             from which we look for the shortest paths </param>
             <returns> graph with filled "distances" and "prevs" of every node </returns>
         </member>
-        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Initialize(DijkstraAlgorhitm.Graph,DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.PriorityQueue{DijkstraAlgorhitm.DijkstraNode})">
+        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Initialize(DijkstraAlgorhitm.Graph,DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.PriorityQueue)">
             <summary>
             Dijkstra initialization 
             </summary>
@@ -68,7 +68,7 @@
             <param name="source"> source node </param>
             <param name="distances"> empty priority queue </param>
         </member>
-        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Relax(DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.DijkstraNode,System.Int32,DijkstraAlgorhitm.PriorityQueue{DijkstraAlgorhitm.DijkstraNode})">
+        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Relax(DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.DijkstraNode,System.Int32,DijkstraAlgorhitm.PriorityQueue)">
             <summary>
             find shortest distance to vertice v 
             between known distance (v.Distance) 
@@ -139,6 +139,13 @@
             <param name="graph"> source graph </param>
             <param name="source"> source node </param>
             <returns> graph with filled "distances" and "prevs" of every node </returns>
+        </member>
+        <member name="M:DijkstraAlgorhitm.PriorityQueue.Insert(DijkstraAlgorhitm.DijkstraNode,System.Int32)">
+            <summary>
+            Insert the specified element and priority.
+            </summary>
+            <param name="element">Element.</param>
+            <param name="priority">Priority.</param>
         </member>
     </members>
 </doc>

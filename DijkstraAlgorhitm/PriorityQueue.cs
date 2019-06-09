@@ -40,10 +40,11 @@ namespace DijkstraAlgorhitm
             return tree[0].priority;
         }
 
-        public (DijkstraNode, int) ExtractMin()
+        public (DijkstraNode node, int priority) ExtractMin()
         {
             var result = tree[0];
             tree[0] = tree[Size - 1];
+            tree[0].element.QueueIndex = 0;
             tree.RemoveAt(Size - 1);
             SiftDown(0);
             return result;
@@ -84,14 +85,13 @@ namespace DijkstraAlgorhitm
         private void SiftDown(int i)
         {
             var minIndex = i;
-            var size = tree.Count;
 
             var l = LeftChild(i);
-            if (l < size && tree[l].priority.CompareTo(tree[minIndex].priority) < 0)
+            if (l < Size && tree[l].priority.CompareTo(tree[minIndex].priority) < 0)
                 minIndex = l;
 
             var r = RightChild(i);
-            if (r < size && tree[r].priority.CompareTo(tree[minIndex].priority) < 0)
+            if (r < Size && tree[r].priority.CompareTo(tree[minIndex].priority) < 0)
                 minIndex = r;
 
             if (i != minIndex)
@@ -105,9 +105,7 @@ namespace DijkstraAlgorhitm
         {
             var tempValue = tree[i];
             tree[i] = tree[j];
-            tree[i].element.QueueIndex = j;
             tree[j] = tempValue;
-            tree[j].element.QueueIndex = i;
         }
     }
 }
