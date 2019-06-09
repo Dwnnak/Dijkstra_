@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace DijkstraAlgorhitm
 {
-    public class PriorityQueue<T>
+    public class PriorityQueue
     {
-        public List<PQElement<T>> tree;
+        public List<(DijkstraNode element, int priority)> tree;
         public int Size { get { return tree.Count; } }
 
         private int Parent(int i)
@@ -20,77 +20,53 @@ namespace DijkstraAlgorhitm
 
         public PriorityQueue()
         {
-            tree = new List<PQElement<T>>();
+            tree = new List<(DijkstraNode element, int priority)>();
         }
 
-        public PriorityQueue(params PQElement<T>[] values)
+        /// <summary>
+        /// Insert the specified element and priority.
+        /// </summary>
+        /// <param name="element">Element.</param>
+        /// <param name="priority">Priority.</param>
+        public void Insert(DijkstraNode element, int priority)
         {
-            tree = new List<PQElement<T>>();
-            for (int i = 0; i < values.Length; i++)
-                Insert(values[i].Element, values[i].Priority);
-        }
-
-        public void Insert(T element, int priority)
-        {
-            PQElement<T> temp = new PQElement<T>(element, priority);
-            tree.Add(temp);
-            SiftUp(tree.Count - 1);
+            tree.Add((element, priority));
+            tree[Size - 1].element.QueueIndex = Size - 1;
+            SiftUp(Size - 1);
         }
 
         public int GetMin()
         {
-            return tree[0].Priority;
+            return tree[0].priority;
         }
 
-        public T ExtractMin()
+        public (DijkstraNode, int) ExtractMin()
         {
-            PQElement<T> result = tree[0];
-            tree[0] = tree[tree.Count - 1];
-            tree.RemoveAt(tree.Count - 1);
+            var result = tree[0];
+            tree[0] = tree[Size - 1];
+            tree.RemoveAt(Size - 1);
             SiftDown(0);
-            return result.Element;
+            return result;
         }
 
-        public void Remove(int i)
+        public void ChangePriority(DijkstraNode element, int priority)
         {
-            tree[i] = tree[0];
-            SiftUp(i);
-            ExtractMin();
-        }
+            var index = element.QueueIndex;
+            int oldP = tree[index].priority;
+            tree[index] = (tree[index].element, priority);
 
-        public void ChangePriority(int i, int p)
-        {
-            int oldP = tree[i].Priority;
-            tree[i].Priority = p;
-
-            if (p.CompareTo(oldP) < 0)
-                SiftUp(i);
-            else if (p.CompareTo(oldP) > 0)
-                SiftDown(i);
-        }
-
-        public void ChangePriority(DijkstraNode element, int p)
-        {
-            int i = FindPosition(element);
-            int oldP = tree[i].Priority;
-            tree[i].Priority = p;
-
-            if (p.CompareTo(oldP) < 0)
-                SiftUp(i);
-            else if (p.CompareTo(oldP) > 0)
-                SiftDown(i);
+            if (priority.CompareTo(oldP) < 0)
+                SiftUp(index);
+            else if (priority.CompareTo(oldP) > 0)
+                SiftDown(index);
         }
 
         public bool Contains(DijkstraNode element)
         {
             for(int i = 0; i < tree.Count; i++)
             {
-                if (tree[i].Element is DijkstraNode)
-                {
-                    DijkstraNode node = tree[i].Element as DijkstraNode;
-                    if (node == element)
-                        return true;
-                }
+                if (tree[i].element.Equals(element))
+                    return true;
             }
             return false;
         }
@@ -98,7 +74,7 @@ namespace DijkstraAlgorhitm
 
         private void SiftUp(int i)
         {
-            if (i > 0 && tree[Parent(i)].Priority.CompareTo(tree[i].Priority) > 0)
+            if (i > 0 && tree[Parent(i)].priority.CompareTo(tree[i].priority) > 0)
             {
                 Swap(i, Parent(i));
                 SiftUp(Parent(i));
@@ -111,11 +87,11 @@ namespace DijkstraAlgorhitm
             var size = tree.Count;
 
             var l = LeftChild(i);
-            if (l < size && tree[l].Priority.CompareTo(tree[minIndex].Priority) < 0)
+            if (l < size && tree[l].priority.CompareTo(tree[minIndex].priority) < 0)
                 minIndex = l;
 
             var r = RightChild(i);
-            if (r < size && tree[r].Priority.CompareTo(tree[minIndex].Priority) < 0)
+            if (r < size && tree[r].priority.CompareTo(tree[minIndex].priority) < 0)
                 minIndex = r;
 
             if (i != minIndex)
@@ -127,24 +103,11 @@ namespace DijkstraAlgorhitm
 
         private void Swap(int i, int j)
         {
-            PQElement<T> tempValue = tree[i];
+            var tempValue = tree[i];
             tree[i] = tree[j];
+            tree[i].element.QueueIndex = j;
             tree[j] = tempValue;
-        }
-
-        private int FindPosition(DijkstraNode element)
-        {
-            for (int i = 0; i < tree.Count; i++)
-            {
-                if (tree[i].Element is DijkstraNode)
-                {
-                    DijkstraNode node = tree[i].Element as DijkstraNode;
-                    if (node == element)
-                        return i;
-                }
-            }
-
-            throw new ArgumentOutOfRangeException();
+            tree[j].element.QueueIndex = i;
         }
     }
 }

@@ -10,7 +10,6 @@
         /// name of node
         /// </summary>
         public string Name { get; set; }
-        
         /// <summary>
         /// distance from source node. 
         /// int.MaxValue by default
@@ -20,7 +19,9 @@
         /// <summary>
         /// previous node of shortest path
         /// </summary>
-        public DijkstraNode Prev { get; set; }  
+        public DijkstraNode Prev { get; set; } 
+
+        public int QueueIndex { get; set; }
 
         public DijkstraNode(string name, int distance = int.MaxValue)
         {
