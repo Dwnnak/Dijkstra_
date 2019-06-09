@@ -1,29 +1,28 @@
 ﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/PQElement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraAlgorhitm.xml">
     <Files>
-      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="85" Column="1" />
-      <File FileName="DijkstraAlgorhitm/PQElement.cs" Line="12" Column="20" />
-      <File FileName="DijkstraAlgorhitm/Graph.cs" Line="19" Column="1" />
+      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="50" Column="1" />
       <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="1" Column="1" />
-      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="13" Column="33" />
+      <File FileName="DijkstraAlgorhitm/Graph.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="14" Column="9" />
       <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="1" Column="1" />
-      <File FileName="DijkstraAlgorhitm/Program.cs" Line="25" Column="1" />
-      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="15" Column="45" />
-      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="56" Column="35" />
+      <File FileName="DijkstraAlgorhitm/Program.cs" Line="30" Column="42" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="68" Column="10" />
+      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="1" Column="1" />
+      <File FileName="Tests/DijkstraTests.cs" Line="75" Column="11" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DijkstraAlgorithm" expanded="True">
             <Node name="DijkstraAlgorhitm" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="PQElement.cs" selected="True" />
+              <Node name="DijkstraAlgorhitm.xml" selected="True" />
             </Node>
             <Node name="PriorityTests" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="SdkDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
             </Node>
+            <Node name="Tests" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -39,9 +38,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ivandoronin/Documents/GitHub/Dijkstra_/DijkstraAlgorhitm/Program.cs" relfile="DijkstraAlgorhitm/Program.cs" line="24" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
