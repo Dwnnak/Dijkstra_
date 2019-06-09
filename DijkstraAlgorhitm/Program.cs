@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     class Program
     {

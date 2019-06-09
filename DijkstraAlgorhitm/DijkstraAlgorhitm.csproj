@@ -5,6 +5,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\DijkstraAlgorhitm\DijkstraAlgorhitm.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Remove="ListExtensions.cs" />
   </ItemGroup>

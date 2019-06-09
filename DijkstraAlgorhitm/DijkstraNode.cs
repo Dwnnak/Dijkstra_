@@ -1,5 +1,4 @@
-﻿using System;
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// implements vertice of graph 

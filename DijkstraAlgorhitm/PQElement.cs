@@ -1,5 +1,4 @@
-﻿using System;
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     public class PQElement<T>
     {

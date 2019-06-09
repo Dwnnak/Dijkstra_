@@ -32,3 +32,4 @@ D:\Учёба\Алгоритмы и анализ сложности\PriorityQueu
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\PriorityTests\obj\Debug\netcoreapp2.1\PriorityTests.csproj.CopyComplete
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\PriorityTests\obj\Debug\netcoreapp2.1\PriorityTests.dll
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\PriorityTests\obj\Debug\netcoreapp2.1\PriorityTests.pdb
+D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\PriorityTests\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.xml

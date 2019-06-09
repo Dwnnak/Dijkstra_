@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "2a1f847d162f85b95a5bc582d0e10a97c7195dd3"
+    "signature": "efefa8243d0c78f1cceacfa743c0533c756cbab7"
   },
   "compilationOptions": {},
   "targets": {
@@ -411,14 +411,6 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.1.19813"
-          }
-        }
-      },
-      "NUnit/3.12.0": {
-        "runtime": {
-          "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.12.0.0",
-            "fileVersion": "3.12.0.0"
           }
         }
       },
@@ -1023,9 +1015,6 @@
         }
       },
       "DijkstraAlgorhitm/1.0.0": {
-        "dependencies": {
-          "NUnit": "3.12.0"
-        },
         "runtime": {
           "DijkstraAlgorhitm.dll": {}
         }
@@ -1121,13 +1110,6 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
-    },
-    "NUnit/3.12.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HAhwFxr+Z+PJf8hXzc747NecvsDwEZ+3X8SA5+GIRM43GAy1Ap+TQPMHsWCnisfes5vPZ1/a2md/91u+shoTsQ==",
-      "path": "nunit/3.12.0",
-      "hashPath": "nunit.3.12.0.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

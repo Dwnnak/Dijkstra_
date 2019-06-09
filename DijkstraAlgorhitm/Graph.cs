@@ -1,5 +1,4 @@
-﻿using System;
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// implements a graph structure as AdjacencyDictionary
@@ -20,7 +19,7 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// add vertice to graph
         /// </summary>
-        /// <param name of future node="name"></param>
+        /// <param name="name"> name of future node </param>
         /// <returns></returns>
         public DijkstraNode AddNode(string name)
         {
@@ -30,9 +29,9 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// add edge to graph
         /// </summary>
-        /// <param source node="u"></param>
-        /// <param destination node="v"></param>
-        /// <param weight from source to destination="weight"></param>
+        /// <param name="u"> source node </param>
+        /// <param name="v"> destination node </param>
+        /// <param name="weight"> weight from source to destination </param>
         public void AddEdge(DijkstraNode u, DijkstraNode v, int weight)
         {
             AdjDict.AddEdge(u, v, weight);

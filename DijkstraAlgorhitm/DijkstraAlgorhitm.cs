@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// Implements Dijkstra shortest paths algorithm
@@ -10,9 +8,9 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// Call Dijkstra algorithm
         /// </summary>
-        /// <param source graph ="graph"></param>
-        /// <param the node 
-        /// from which we look for the shortest paths ="source"></param>
+        /// <param name="graph"> source graph </param>
+        /// <param name="source"> the node 
+        /// from which we look for the shortest paths </param>
         /// <returns> graph with filled "distances" and "prevs" of every node </returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
@@ -36,9 +34,9 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// Dijkstra initialization 
         /// </summary>
-        /// <param source graph="graph"></param>
-        /// <param source node="source"></param>
-        /// <param empty priority queue="distances"></param>
+        /// <param name="graph"> source graph </param>
+        /// <param name="source"> source node </param>
+        /// <param name="distances"> empty priority queue </param>
         private void Initialize
             (Graph graph, DijkstraNode source, PriorityQueue<DijkstraNode> distances)
         {
@@ -53,10 +51,10 @@ namespace DijkstraAlgorhitm
         /// between known distance (v.Distance) 
         /// and from u across edge (u, v)
         /// </summary>
-        /// <param source node="u"></param>
-        /// <param adjacent node="v"></param>
-        /// <param weith of edge between u and v="weight"></param>
-        /// <param pririty queue with Dijkstra nodes="queue"></param>
+        /// <param name="u"> source node </param>
+        /// <param name="v"> adjacent node </param>
+        /// <param name="weight"> weith of edge between u and v </param>
+        /// <param name="queue"> pririty queue with Dijkstra nodes </param>
         private void Relax(DijkstraNode u, DijkstraNode v, int weight,
             PriorityQueue<DijkstraNode> queue)
         {

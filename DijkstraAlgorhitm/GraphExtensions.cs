@@ -1,5 +1,4 @@
-﻿using System;
-namespace DijkstraAlgorhitm
+﻿namespace DijkstraAlgorhitm
 {
     /// <summary>
     /// Extension methods for Graph class
@@ -9,8 +8,8 @@ namespace DijkstraAlgorhitm
         /// <summary>
         /// simplification: call Dijkstra algorithm from instance of Graph
         /// </summary>
-        /// <param source graph ="graph"></param>
-        /// <param source node="source"></param>
+        /// <param name="graph"> source graph </param>
+        /// <param name="source"> source node </param>
         /// <returns> graph with filled "distances" and "prevs" of every node </returns>
         public static Graph FindDijkstraShortestPathsFrom(this Graph graph, DijkstraNode source)
         {
