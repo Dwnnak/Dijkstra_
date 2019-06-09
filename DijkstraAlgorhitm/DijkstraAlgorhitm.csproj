@@ -8,7 +8,4 @@
   <ItemGroup>
     <Compile Remove="ListExtensions.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
-  </ItemGroup>
 </Project>
