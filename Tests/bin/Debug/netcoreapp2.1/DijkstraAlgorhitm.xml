@@ -60,7 +60,7 @@
             from which we look for the shortest paths </param>
             <returns> graph with filled "distances" and "prevs" of every node </returns>
         </member>
-        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Initialize(DijkstraAlgorhitm.Graph,DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.PriorityQueue)">
+        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Initialize(DijkstraAlgorhitm.Graph,DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.DijkstraPriorityQueue)">
             <summary>
             Dijkstra initialization 
             </summary>
@@ -68,7 +68,7 @@
             <param name="source"> source node </param>
             <param name="distances"> empty priority queue </param>
         </member>
-        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Relax(DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.DijkstraNode,System.Int32,DijkstraAlgorhitm.PriorityQueue)">
+        <member name="M:DijkstraAlgorhitm.DijkstraAlgorhitm.Relax(DijkstraAlgorhitm.DijkstraNode,DijkstraAlgorhitm.DijkstraNode,System.Int32,DijkstraAlgorhitm.DijkstraPriorityQueue)">
             <summary>
             find shortest distance to vertice v 
             between known distance (v.Distance) 
@@ -82,7 +82,7 @@
         <member name="T:DijkstraAlgorhitm.DijkstraNode">
             <summary>
             implements vertice of graph 
-            also stores elements of Dijkstra algorithm (distance and prev)
+            also stores elements of Dijkstra algorithm (distance, prev, index)
             </summary>
         </member>
         <member name="P:DijkstraAlgorhitm.DijkstraNode.Name">
@@ -99,6 +99,77 @@
         <member name="P:DijkstraAlgorhitm.DijkstraNode.Prev">
             <summary>
             previous node of shortest path
+            </summary>
+        </member>
+        <member name="P:DijkstraAlgorhitm.DijkstraNode.IndexInQueue">
+            <summary>
+            index in priority queue
+            </summary>
+        </member>
+        <member name="T:DijkstraAlgorhitm.DijkstraPriorityQueue">
+            <summary>
+            priority queue in which the DijkstraNode is used as a key
+            </summary>
+        </member>
+        <member name="F:DijkstraAlgorhitm.DijkstraPriorityQueue.tree">
+            <summary>
+            Stores the tree
+            </summary>
+        </member>
+        <member name="P:DijkstraAlgorhitm.DijkstraPriorityQueue.Size">
+            <summary>
+            Gets the size of priority queue.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.Parent(System.Int32)">
+            <summary>
+            returns parent index.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.LeftChild(System.Int32)">
+            <summary>
+            returns left child index
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.RightChild(System.Int32)">
+            <summary>
+            returns right child index
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.Insert(DijkstraAlgorhitm.DijkstraNode,System.Int32)">
+            <summary>
+            Insert the dijkstra node and priority.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.ExtractMin">
+            <summary>
+            Extracts the dijkstra node and its priority.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.ChangePriority(DijkstraAlgorhitm.DijkstraNode,System.Int32)">
+            <summary>
+            Changes the priority.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.Contains(DijkstraAlgorhitm.DijkstraNode)">
+            <summary>
+            Сhecks for an item in the priority queue.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.SiftUp(System.Int32)">
+            <summary>
+            Sifts up the element.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.SiftDown(System.Int32)">
+            <summary>
+            Sifts down yhe element.
+            </summary>
+        </member>
+        <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.Swap(System.Int32,System.Int32)">
+            <summary>
+            Swap the 2 dijkstra nodes in queue.
             </summary>
         </member>
         <member name="T:DijkstraAlgorhitm.Graph">
@@ -139,13 +210,6 @@
             <param name="graph"> source graph </param>
             <param name="source"> source node </param>
             <returns> graph with filled "distances" and "prevs" of every node </returns>
-        </member>
-        <member name="M:DijkstraAlgorhitm.PriorityQueue.Insert(DijkstraAlgorhitm.DijkstraNode,System.Int32)">
-            <summary>
-            Insert the specified element and priority.
-            </summary>
-            <param name="element">Element.</param>
-            <param name="priority">Priority.</param>
         </member>
     </members>
 </doc>

@@ -9,8 +9,8 @@ namespace DijkstraAlgorhitm
     public class DijkstraPriorityQueue
     {
         /// <summary>
-           /// Stores the tree
-           /// </summary>
+        /// Stores the tree
+        /// </summary>
         public List<(DijkstraNode element, int priority)> tree;
 
         /// <summary>
@@ -20,8 +20,10 @@ namespace DijkstraAlgorhitm
         public int Size { get { return tree.Count; } }
 
         /// <summary>
-        /// returns parent index.
+        /// Get parent of element by index
         /// </summary>
+        /// <param name="i"></param>
+        /// <returns> returns parent index </returns>
         private int Parent(int i)
         {
             if (i == 0) return 0;

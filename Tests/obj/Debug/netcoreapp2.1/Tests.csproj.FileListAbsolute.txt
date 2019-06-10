@@ -17,3 +17,22 @@ D:\Учёба\Алгоритмы и анализ сложности\PriorityQueu
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.dll
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.pdb
 D:\Учёба\Алгоритмы и анализ сложности\PriorityQueueAndDijkstra\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.xml
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Tests.deps.json
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Tests.runtimeconfig.json
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Tests.runtimeconfig.dev.json
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Tests.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\Tests.pdb
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.pdb
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\bin\Debug\netcoreapp2.1\DijkstraAlgorhitm.xml
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.csprojAssemblyReference.cache
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.csproj.CoreCompileInputs.cache
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.AssemblyInfoInputs.cache
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.AssemblyInfo.cs
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.csproj.CopyComplete
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.dll
+D:\Учёба\Алгоритмы и анализ сложности\21 34\Dijkstra_\Tests\obj\Debug\netcoreapp2.1\Tests.pdb
