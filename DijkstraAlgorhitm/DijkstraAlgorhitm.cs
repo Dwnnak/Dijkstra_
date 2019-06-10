@@ -23,10 +23,7 @@
                 var adjNodes = graph.AdjDict[start.node];
                 
                 foreach (var (node, weight) in adjNodes)
-                {
-                    if (priorityQueue.Contains(node))
-                        Relax(start.node, node, weight, priorityQueue);
-                }
+                    Relax(start.node, node, weight, priorityQueue);
             }
             return graph;
         }
