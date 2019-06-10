@@ -31,7 +31,7 @@ namespace DijkstraAlgorhitm
         public void Insert(DijkstraNode element, int priority)
         {
             tree.Add((element, priority));
-            tree[Size - 1].element.QueueIndex = Size - 1;
+            tree[Size - 1].element.IndexInQueue = Size - 1;
             SiftUp(Size - 1);
         }
 
@@ -44,7 +44,7 @@ namespace DijkstraAlgorhitm
         {
             var result = tree[0];
             tree[0] = tree[Size - 1];
-            tree[0].element.QueueIndex = 0;
+            tree[0].element.IndexInQueue = 0;
             tree.RemoveAt(Size - 1);
             SiftDown(0);
             return result;
@@ -52,7 +52,7 @@ namespace DijkstraAlgorhitm
 
         public void ChangePriority(DijkstraNode element, int priority)
         {
-            var index = element.QueueIndex;
+            var index = element.IndexInQueue;
             int oldP = tree[index].priority;
             tree[index] = (tree[index].element, priority);
 
@@ -106,6 +106,8 @@ namespace DijkstraAlgorhitm
             var tempValue = tree[i];
             tree[i] = tree[j];
             tree[j] = tempValue;
+            tree[i].element.IndexInQueue = i;
+            tree[j].element.IndexInQueue = j;
         }
     }
 }
