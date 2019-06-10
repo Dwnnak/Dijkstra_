@@ -5806,11 +5806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\PriorityTests.csproj",
+      "projectUniqueName": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\PriorityTests.csproj",
       "projectName": "PriorityTests",
-      "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\PriorityTests.csproj",
+      "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\PriorityTests.csproj",
       "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-      "outputPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\obj\\",
+      "outputPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\PriorityTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5829,8 +5829,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj": {
-              "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj"
+            "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj": {
+              "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj"
             }
           }
         }

@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj",
+      "projectUniqueName": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj",
       "projectName": "DijkstraAlgorhitm",
-      "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj",
+      "projectPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\DijkstraAlgorhitm.csproj",
       "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
-      "outputPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\obj\\",
+      "outputPath": "D:\\Учёба\\Алгоритмы и анализ сложности\\экзамен\\PriorityQueueAndDijkstra\\Dijkstra_\\DijkstraAlgorhitm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

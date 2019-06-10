@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="">
+    <Position X="11.395" Y="7.794" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="DijkstraAlgorhitm.AdjacencyDictionary">
+    <Position X="5.5" Y="0.5" Width="4.75" />
+    <Members>
+      <Property Name="this" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>AdjacencyDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DijkstraAlgorhitm.DijkstraAlgorhitm">
+    <Position X="3" Y="2.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQQQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DijkstraAlgorhitm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DijkstraAlgorhitm.DijkstraNode">
+    <Position X="0.5" Y="2.25" Width="2.25" />
+    <Members>
+      <Method Name="DijkstraNode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAIAAAAEBAAAAAAAAAAAA=</HashCode>
+      <FileName>DijkstraNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DijkstraAlgorhitm.Graph">
+    <Position X="0.5" Y="0.5" Width="4" />
+    <Members>
+      <Method Name="Graph" Hidden="true" />
+    </Members>
+    <AssociationLine Name="AdjDict" Type="DijkstraAlgorhitm.AdjacencyDictionary" FixedFromPoint="true">
+      <Path>
+        <Point X="4.5" Y="0.663" />
+        <Point X="5.5" Y="0.663" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.031" Y="0.118" Height="0.182" Width="0.853" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Graph.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdjDict" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DijkstraAlgorhitm.GraphExtensions">
+    <Position X="0.5" Y="4.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>GraphExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DijkstraAlgorhitm.PriorityQueue">
+    <Position X="10.5" Y="0.5" Width="3.75" />
+    <Members>
+      <Method Name="PriorityQueue" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAoAABggAAQAgAAAABAAAAAAAAgBAQAAA=</HashCode>
+      <FileName>PriorityQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
