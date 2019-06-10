@@ -1,23 +1,21 @@
 ﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraAlgorhitm.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraNode.cs">
     <Files>
-      <File FileName="DijkstraAlgorhitm/PriorityQueue.cs" Line="50" Column="1" />
-      <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="1" Column="1" />
-      <File FileName="DijkstraAlgorhitm/Graph.cs" Line="1" Column="1" />
-      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="14" Column="9" />
+      <File FileName="DijkstraAlgorhitm/DijkstraPriorityQueue.cs" Line="32" Column="1" />
+      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="14" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="37" Column="1" />
       <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="1" Column="1" />
-      <File FileName="DijkstraAlgorhitm/Program.cs" Line="30" Column="42" />
-      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="68" Column="10" />
-      <File FileName="PriorityTests/PriorityQueueTests.cs" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/Program.cs" Line="11" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="64" Column="47" />
       <File FileName="Tests/DijkstraTests.cs" Line="75" Column="11" />
-      <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.xml" Line="1" Column="1" />
+      <File FileName="DijkstraAlgorhitm/Graph.cs" Line="26" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DijkstraAlgorithm" expanded="True">
             <Node name="DijkstraAlgorhitm" expanded="True">
-              <Node name="DijkstraAlgorhitm.xml" selected="True" />
+              <Node name="DijkstraNode.cs" selected="True" />
             </Node>
             <Node name="PriorityTests" expanded="True">
               <Node name="Dependencies" expanded="True" />
@@ -28,7 +26,15 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="DijkstraAlgorithm" expanded="True" selected="True" />
+          <Node name="DijkstraAlgorithm" expanded="True">
+            <Node name="PriorityTests" expanded="True">
+              <Node name="PriorityTests" expanded="True">
+                <Node name="PriorityQueueTests" expanded="True">
+                  <Node name="SiftUpIsCorrect" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

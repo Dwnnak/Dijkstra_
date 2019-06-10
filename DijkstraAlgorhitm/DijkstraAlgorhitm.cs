@@ -14,7 +14,7 @@
         /// <returns> graph with filled "distances" and "prevs" of every node </returns>
         public Graph Execute(Graph graph, DijkstraNode source)
         {
-            var priorityQueue = new PriorityQueue();
+            var priorityQueue = new DijkstraPriorityQueue();
             Initialize(graph, source, priorityQueue);
 
             while (priorityQueue.Size != 0)
@@ -38,7 +38,7 @@
         /// <param name="source"> source node </param>
         /// <param name="distances"> empty priority queue </param>
         private void Initialize
-            (Graph graph, DijkstraNode source, PriorityQueue distances)
+            (Graph graph, DijkstraNode source, DijkstraPriorityQueue distances)
         {
             source.Distance = 0;
             var vertices = graph.AdjDict.GetVertices();
@@ -56,7 +56,7 @@
         /// <param name="weight"> weith of edge between u and v </param>
         /// <param name="queue"> pririty queue with Dijkstra nodes </param>
         private void Relax(DijkstraNode u, DijkstraNode v, int weight,
-            PriorityQueue queue)
+            DijkstraPriorityQueue queue)
         {
             var distanceThroughU = u.Distance + weight;
             if (distanceThroughU < v.Distance)

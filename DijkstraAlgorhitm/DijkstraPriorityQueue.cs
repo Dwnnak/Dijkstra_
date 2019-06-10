@@ -3,11 +3,25 @@ using System.Collections.Generic;
 
 namespace DijkstraAlgorhitm
 {
-    public class PriorityQueue
+    /// <summary>
+    /// priority queue in which the DijkstraNode is used as a key
+    /// </summary>
+    public class DijkstraPriorityQueue
     {
+        /// <summary>
+           /// Stores the tree
+           /// </summary>
         public List<(DijkstraNode element, int priority)> tree;
+
+        /// <summary>
+        /// Gets the size of priority queue.
+        /// </summary>
+        /// <value>The size.</value>
         public int Size { get { return tree.Count; } }
 
+        /// <summary>
+        /// returns parent index.
+        /// </summary>
         private int Parent(int i)
         {
             if (i == 0) return 0;
@@ -15,19 +29,25 @@ namespace DijkstraAlgorhitm
                 return i / 2 - 1;
             return i / 2;
         }
+
+        /// <summary>
+        /// returns left child index
+        /// </summary>
         private int LeftChild(int i) => i * 2 + 1;
+
+        /// <summary>
+        /// returns right child index
+        /// </summary>
         private int RightChild(int i) => (i + 1) * 2;
 
-        public PriorityQueue()
+        public DijkstraPriorityQueue()
         {
             tree = new List<(DijkstraNode element, int priority)>();
         }
 
         /// <summary>
-        /// Insert the specified element and priority.
+        /// Insert the dijkstra node and priority.
         /// </summary>
-        /// <param name="element">Element.</param>
-        /// <param name="priority">Priority.</param>
         public void Insert(DijkstraNode element, int priority)
         {
             tree.Add((element, priority));
@@ -35,11 +55,9 @@ namespace DijkstraAlgorhitm
             SiftUp(Size - 1);
         }
 
-        public int GetMin()
-        {
-            return tree[0].priority;
-        }
-
+        /// <summary>
+        /// Extracts the dijkstra node and its priority.
+        /// </summary>
         public (DijkstraNode node, int priority) ExtractMin()
         {
             var result = tree[0];
@@ -50,6 +68,9 @@ namespace DijkstraAlgorhitm
             return result;
         }
 
+        /// <summary>
+        /// Changes the priority.
+        /// </summary>
         public void ChangePriority(DijkstraNode element, int priority)
         {
             var index = element.IndexInQueue;
@@ -62,6 +83,9 @@ namespace DijkstraAlgorhitm
                 SiftDown(index);
         }
 
+        /// <summary>
+        /// Сhecks for an item in the priority queue.
+        /// </summary>
         public bool Contains(DijkstraNode element)
         {
             for(int i = 0; i < tree.Count; i++)
@@ -72,7 +96,9 @@ namespace DijkstraAlgorhitm
             return false;
         }
 
-
+        /// <summary>
+        /// Sifts up the element.
+        /// </summary>
         private void SiftUp(int i)
         {
             if (i > 0 && tree[Parent(i)].priority.CompareTo(tree[i].priority) > 0)
@@ -82,6 +108,9 @@ namespace DijkstraAlgorhitm
             }
         }
 
+        /// <summary>
+        /// Sifts down yhe element.
+        /// </summary>
         private void SiftDown(int i)
         {
             var minIndex = i;
@@ -101,6 +130,9 @@ namespace DijkstraAlgorhitm
             }
         }
 
+        /// <summary>
+        /// Swap the 2 dijkstra nodes in queue.
+        /// </summary>
         private void Swap(int i, int j)
         {
             var tempValue = tree[i];
