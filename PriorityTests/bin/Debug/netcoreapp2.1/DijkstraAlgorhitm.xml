@@ -124,8 +124,10 @@
         </member>
         <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.Parent(System.Int32)">
             <summary>
-            returns parent index.
+            Get parent of element by index
             </summary>
+            <param name="i"></param>
+            <returns> returns parent index </returns>
         </member>
         <member name="M:DijkstraAlgorhitm.DijkstraPriorityQueue.LeftChild(System.Int32)">
             <summary>

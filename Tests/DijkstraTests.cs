@@ -127,6 +127,29 @@ namespace Tests
             Assert.AreEqual("c -> b -> d", GetPathAsString(graph, c, d));
         }
 
+        [Test]
+        public void PQ()
+        {
+            var queue = new DijkstraPriorityQueue();
+
+            queue.Insert(new DijkstraNode("a"), 2); 
+            queue.Insert(new DijkstraNode("b"), 2);
+            queue.Insert(new DijkstraNode("c"), 1);
+            queue.Insert(new DijkstraNode("d"), 1);
+            queue.Insert(new DijkstraNode("e"), 1);
+            queue.Insert(new DijkstraNode("f"), 1);
+            queue.Insert(new DijkstraNode("g"), 3);
+
+            string nodes = "";
+            while(queue.Size != 0)
+            {
+                var node = queue.ExtractMin();
+                nodes += $"{node.node.Name} ";
+
+            }
+
+            Assert.AreEqual("c d e f a b g", nodes);
+        }
         private string GetPathAsString(Graph graph, DijkstraNode source, DijkstraNode destination)
         {
             var pathNodes = new Stack<string>();

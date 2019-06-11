@@ -42,6 +42,8 @@ namespace DijkstraAlgorhitm
         /// </summary>
         private int RightChild(int i) => (i + 1) * 2;
 
+       //private int order;
+
         public DijkstraPriorityQueue()
         {
             tree = new List<(DijkstraNode element, int priority)>();
@@ -54,7 +56,10 @@ namespace DijkstraAlgorhitm
         {
             tree.Add((element, priority));
             tree[Size - 1].element.IndexInQueue = Size - 1;
+            //tree[Size - 1].element.EnterNumber = order;
+            //order++;
             SiftUp(Size - 1);
+
         }
 
         /// <summary>
@@ -85,19 +90,7 @@ namespace DijkstraAlgorhitm
                 SiftDown(index);
         }
 
-        /// <summary>
-        /// Сhecks for an item in the priority queue.
-        /// </summary>
-        public bool Contains(DijkstraNode element)
-        {
-            for(int i = 0; i < tree.Count; i++)
-            {
-                if (tree[i].element.Equals(element))
-                    return true;
-            }
-            return false;
-        }
-
+       
         /// <summary>
         /// Sifts up the element.
         /// </summary>
@@ -116,13 +109,14 @@ namespace DijkstraAlgorhitm
         private void SiftDown(int i)
         {
             var minIndex = i;
+            //var minOrder = tree[i].element.EnterNumber;
 
             var l = LeftChild(i);
-            if (l < Size && tree[l].priority.CompareTo(tree[minIndex].priority) < 0)
+            if (l < Size && tree[l].priority < tree[minIndex].priority)
                 minIndex = l;
 
             var r = RightChild(i);
-            if (r < Size && tree[r].priority.CompareTo(tree[minIndex].priority) < 0)
+            if (r < Size && tree[r].priority < tree[minIndex].priority)
                 minIndex = r;
 
             if (i != minIndex)
@@ -130,6 +124,20 @@ namespace DijkstraAlgorhitm
                 Swap(i, minIndex);
                 SiftDown(minIndex);
             }
+            //else
+            //{
+            //    if (l < Size && tree[l].element.EnterNumber < tree[minOrder].element.EnterNumber)
+            //        minOrder = l;
+
+            //    if (r < Size && tree[r].element.EnterNumber < tree[minOrder].element.EnterNumber)
+            //        minOrder = r;
+
+            //    if (i != minOrder)
+            //    {
+            //        Swap(i, minOrder);
+            //        SiftDown(minOrder);
+            //    }
+            //}
         }
 
         /// <summary>
