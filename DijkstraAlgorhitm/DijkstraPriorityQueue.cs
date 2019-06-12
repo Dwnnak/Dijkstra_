@@ -42,7 +42,10 @@ namespace DijkstraAlgorhitm
         /// </summary>
         private int RightChild(int i) => (i + 1) * 2;
 
-        private int order;
+        /// <summary>
+        /// Counter for entering order for elements of queue
+        /// </summary>
+        private int Order { get; set; }
 
         public DijkstraPriorityQueue()
         {
@@ -56,8 +59,8 @@ namespace DijkstraAlgorhitm
         {
             tree.Add((element, priority));
             tree[Size - 1].element.IndexInQueue = Size - 1;
-            tree[Size - 1].element.EnterNumber = order;
-            order++;
+            tree[Size - 1].element.EnterNumber = Order;
+            Order++;
             SiftUp(Size - 1);
 
         }

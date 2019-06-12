@@ -27,6 +27,9 @@
         /// </summary>
         public int IndexInQueue { get; set; }
 
+        /// <summary>
+        /// entering order for comparison in priority queue
+        /// </summary>
         public int EnterNumber { get; set; }
 
         public DijkstraNode(string name, int distance = int.MaxValue)
