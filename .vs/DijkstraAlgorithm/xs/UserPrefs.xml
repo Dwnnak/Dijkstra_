@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{B11637B2-736D-48F2-8314-A3678C7C39F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraAlgorhitm.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DijkstraAlgorhitm/DijkstraPriorityQueue.cs">
     <Files>
-      <File FileName="DijkstraAlgorhitm/DijkstraPriorityQueue.cs" Line="71" Column="10" />
-      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="32" Column="25" />
+      <File FileName="DijkstraAlgorhitm/DijkstraPriorityQueue.cs" Line="132" Column="14" />
+      <File FileName="Tests/DijkstraTests.cs" Line="142" Column="1" />
+      <File FileName="DijkstraAlgorhitm/DijkstraNode.cs" Line="23" Column="48" />
       <File FileName="DijkstraAlgorhitm/AdjacencyDictionary.cs" Line="1" Column="1" />
       <File FileName="DijkstraAlgorhitm/DijkstraAlgorhitm.cs" Line="64" Column="14" />
-      <File FileName="Tests/DijkstraTests.cs" Line="149" Column="14" />
       <File FileName="DijkstraAlgorhitm/Graph.cs" Line="26" Column="35" />
       <File FileName="DijkstraAlgorhitm/GraphExtensions.cs" Line="1" Column="1" />
     </Files>
@@ -14,7 +14,7 @@
         <State name="__root__">
           <Node name="DijkstraAlgorithm" expanded="True">
             <Node name="DijkstraAlgorhitm" expanded="True">
-              <Node name="DijkstraAlgorhitm.cs" selected="True" />
+              <Node name="DijkstraPriorityQueue.cs" selected="True" />
             </Node>
             <Node name="Tests" expanded="True" />
           </Node>
@@ -22,15 +22,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="DijkstraAlgorithm" expanded="True">
-            <Node name="Tests" expanded="True">
-              <Node name="Tests" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="PQ" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="DijkstraAlgorithm" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -39,7 +31,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ivandoronin/Documents/GitHub/Dijkstra_/Tests/DijkstraTests.cs" relfile="Tests/DijkstraTests.cs" line="133" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
