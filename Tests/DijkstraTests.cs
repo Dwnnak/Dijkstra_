@@ -162,6 +162,44 @@ namespace Tests
 
             Assert.AreEqual("q c d e f j o r a b h k m p g i l n", actual);
         }
+
+        [Test]
+        public void PQ1()
+        {
+            var queue = new DijkstraPriorityQueue();
+
+            queue.Insert(new DijkstraNode("a"), 1);
+            queue.Insert(new DijkstraNode("b"), 1);
+            queue.Insert(new DijkstraNode("c"), 1);
+            queue.Insert(new DijkstraNode("d"), 1);
+
+            queue.Insert(new DijkstraNode("e"), 1);
+            queue.Insert(new DijkstraNode("f"), 1);
+            queue.Insert(new DijkstraNode("g"), 2);
+            queue.Insert(new DijkstraNode("h"), 2);
+            queue.Insert(new DijkstraNode("i"), 2);
+            queue.Insert(new DijkstraNode("j"), 2);
+            queue.Insert(new DijkstraNode("k"), 2);
+            queue.Insert(new DijkstraNode("l"), 1);
+            queue.Insert(new DijkstraNode("m"), 1);
+            queue.Insert(new DijkstraNode("n"), 1);
+            queue.Insert(new DijkstraNode("o"), 1);
+            queue.Insert(new DijkstraNode("p"), 1);
+            queue.Insert(new DijkstraNode("q"), 1);
+            queue.Insert(new DijkstraNode("r"), 1);
+            queue.Insert(new DijkstraNode("s"), 1);
+            queue.Insert(new DijkstraNode("t"), 1);
+            var nodes = new List<string>();
+            while (queue.Size != 0)
+            {
+                var (node, priority) = queue.ExtractMin();
+                nodes.Add(node.Name);
+            }
+
+            var actual = string.Join(" ", nodes);
+
+            Assert.AreEqual("a b c d e f l m n o p q r s t g h i j k", actual);
+        }
         private string GetPathAsString(Graph graph, DijkstraNode source, DijkstraNode destination)
         {
             var pathNodes = new Stack<string>();

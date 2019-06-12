@@ -110,22 +110,22 @@ namespace DijkstraAlgorhitm
         {
             var swapIndex = i;
 
-            var left = LeftChild(i);
-            if (left < Size)
+            var leftIndex = LeftChild(i);
+            if (leftIndex < Size)
             {
-                if (tree[left].priority < tree[swapIndex].priority ||
-                    (tree[left].priority == tree[swapIndex].priority &&
-                    tree[left].element.EnterNumber < tree[swapIndex].element.EnterNumber))
-                    swapIndex = left;
+                if (tree[leftIndex].priority < tree[swapIndex].priority ||
+                    (tree[leftIndex].priority == tree[swapIndex].priority &&
+                    tree[leftIndex].element.EnterNumber < tree[swapIndex].element.EnterNumber))
+                    swapIndex = leftIndex;
             }
 
-            var right = RightChild(i);
-            if (right < Size)
+            var rightIndex = RightChild(i);
+            if (rightIndex < Size)
             {
-                if (tree[right].priority < tree[swapIndex].priority ||
-                    (tree[right].priority == tree[swapIndex].priority && 
-                    tree[right].element.EnterNumber < tree[swapIndex].element.EnterNumber))
-                    swapIndex = right;
+                if (tree[rightIndex].priority < tree[swapIndex].priority ||
+                    (tree[rightIndex].priority == tree[swapIndex].priority && 
+                    tree[rightIndex].element.EnterNumber < tree[swapIndex].element.EnterNumber))
+                    swapIndex = rightIndex;
             }
 
             if (i != swapIndex)
