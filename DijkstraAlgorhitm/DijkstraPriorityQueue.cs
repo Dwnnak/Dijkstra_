@@ -42,7 +42,7 @@ namespace DijkstraAlgorhitm
         /// </summary>
         private int RightChild(int i) => (i + 1) * 2;
 
-       //private int order;
+        private int order;
 
         public DijkstraPriorityQueue()
         {
@@ -56,8 +56,8 @@ namespace DijkstraAlgorhitm
         {
             tree.Add((element, priority));
             tree[Size - 1].element.IndexInQueue = Size - 1;
-            //tree[Size - 1].element.EnterNumber = order;
-            //order++;
+            tree[Size - 1].element.EnterNumber = order;
+            order++;
             SiftUp(Size - 1);
 
         }
@@ -90,7 +90,7 @@ namespace DijkstraAlgorhitm
                 SiftDown(index);
         }
 
-       
+
         /// <summary>
         /// Sifts up the element.
         /// </summary>
@@ -108,21 +108,30 @@ namespace DijkstraAlgorhitm
         /// </summary>
         private void SiftDown(int i)
         {
-            var minIndex = i;
-            //var minOrder = tree[i].element.EnterNumber;
+            var swapIndex = i;
 
-            var l = LeftChild(i);
-            if (l < Size && tree[l].priority < tree[minIndex].priority)
-                minIndex = l;
-
-            var r = RightChild(i);
-            if (r < Size && tree[r].priority < tree[minIndex].priority)
-                minIndex = r;
-
-            if (i != minIndex)
+            var left = LeftChild(i);
+            if (left < Size)
             {
-                Swap(i, minIndex);
-                SiftDown(minIndex);
+                if (tree[left].priority < tree[swapIndex].priority ||
+                    (tree[left].priority == tree[swapIndex].priority &&
+                    tree[left].element.EnterNumber < tree[swapIndex].element.EnterNumber))
+                    swapIndex = left;
+            }
+
+            var right = RightChild(i);
+            if (right < Size)
+            {
+                if (tree[right].priority < tree[swapIndex].priority ||
+                    (tree[right].priority == tree[swapIndex].priority && 
+                    tree[right].element.EnterNumber < tree[swapIndex].element.EnterNumber))
+                    swapIndex = right;
+            }
+
+            if (i != swapIndex)
+            {
+                Swap(i, swapIndex);
+                SiftDown(swapIndex);
             }
             //else
             //{

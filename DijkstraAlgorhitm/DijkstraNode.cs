@@ -27,7 +27,7 @@
         /// </summary>
         public int IndexInQueue { get; set; }
 
-        //public int EnterNumber { get; set; }
+        public int EnterNumber { get; set; }
 
         public DijkstraNode(string name, int distance = int.MaxValue)
         {

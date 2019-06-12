@@ -139,16 +139,28 @@ namespace Tests
             queue.Insert(new DijkstraNode("e"), 1);
             queue.Insert(new DijkstraNode("f"), 1);
             queue.Insert(new DijkstraNode("g"), 3);
+            queue.Insert(new DijkstraNode("h"), 2);
+            queue.Insert(new DijkstraNode("i"), 3);
+            queue.Insert(new DijkstraNode("j"), 1);
+            queue.Insert(new DijkstraNode("k"), 2);
+            queue.Insert(new DijkstraNode("l"), 3);
+            queue.Insert(new DijkstraNode("m"), 2);
+            queue.Insert(new DijkstraNode("n"), 3);
+            queue.Insert(new DijkstraNode("o"), 1);
+            queue.Insert(new DijkstraNode("p"), 2);
+            queue.Insert(new DijkstraNode("q"), 0);
+            queue.Insert(new DijkstraNode("r"), 1);
 
-            string nodes = "";
+            var nodes = new List<string>();
             while(queue.Size != 0)
             {
-                var node = queue.ExtractMin();
-                nodes += $"{node.node.Name} ";
-
+                var (node, priority) = queue.ExtractMin();
+                nodes.Add(node.Name);
             }
 
-            Assert.AreEqual("c d e f a b g", nodes);
+            var actual = string.Join(" ", nodes);
+
+            Assert.AreEqual("q c d e f j o r a b h k m p g i l n", actual);
         }
         private string GetPathAsString(Graph graph, DijkstraNode source, DijkstraNode destination)
         {
