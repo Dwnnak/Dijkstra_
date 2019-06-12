@@ -84,13 +84,12 @@ namespace DijkstraAlgorhitm
             int oldP = tree[index].priority;
             tree[index] = (tree[index].element, priority);
 
-            if (priority.CompareTo(oldP) < 0)
+            if (priority < oldP)
                 SiftUp(index);
-            else if (priority.CompareTo(oldP) > 0)
+            else if (priority > oldP)
                 SiftDown(index);
         }
-
-
+        
         /// <summary>
         /// Sifts up the element.
         /// </summary>
