@@ -132,20 +132,6 @@ namespace DijkstraAlgorhitm
                 Swap(i, swapIndex);
                 SiftDown(swapIndex);
             }
-            //else
-            //{
-            //    if (l < Size && tree[l].element.EnterNumber < tree[minOrder].element.EnterNumber)
-            //        minOrder = l;
-
-            //    if (r < Size && tree[r].element.EnterNumber < tree[minOrder].element.EnterNumber)
-            //        minOrder = r;
-
-            //    if (i != minOrder)
-            //    {
-            //        Swap(i, minOrder);
-            //        SiftDown(minOrder);
-            //    }
-            //}
         }
 
         /// <summary>
